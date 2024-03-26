@@ -1,0 +1,15 @@
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\bin\Debug\net7.0\DentiSys.exe
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\bin\Debug\net7.0\DentiSys.deps.json
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\bin\Debug\net7.0\DentiSys.runtimeconfig.json
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\bin\Debug\net7.0\DentiSys.dll
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\bin\Debug\net7.0\DentiSys.pdb
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\obj\Debug\net7.0\DentiSys.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\obj\Debug\net7.0\DentiSys.AssemblyInfoInputs.cache
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\obj\Debug\net7.0\DentiSys.AssemblyInfo.cs
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\obj\Debug\net7.0\DentiSys.csproj.CoreCompileInputs.cache
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\obj\Debug\net7.0\DentiSys.dll
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\obj\Debug\net7.0\refint\DentiSys.dll
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\obj\Debug\net7.0\DentiSys.pdb
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\obj\Debug\net7.0\DentiSys.genruntimeconfig.cache
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\obj\Debug\net7.0\ref\DentiSys.dll
+C:\dev\SistemaOdontologico-ConsoleApplication\DentiSys\obj\Debug\net7.0\DentiSys.sourcelink.json
