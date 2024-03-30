@@ -3,7 +3,7 @@ namespace DentiSys.Models
 {
     public class Dentista
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Nome { get; set; }
         public string SobreNome { get; set; }
         public int Idade { get; set; }
@@ -13,7 +13,7 @@ namespace DentiSys.Models
         public string NumeroDeTelefone { get; set; }
         public string Especializacao { get; set; }
         public string NumeroDeRegistro { get; set; } //Numero de registro emitido pela pregadora do curso superior
-        public Guid IdEndereco { get; set; }
+        public int IdEndereco { get; set; }
         public Endereco Endereco { get; set; }
     }
 }

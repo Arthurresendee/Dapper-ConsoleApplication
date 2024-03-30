@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DentiSys.Screens.EnderecoScreen.CRUD;
 
 namespace DentiSys.Screens.PacienteScreen
 {
@@ -27,6 +28,9 @@ namespace DentiSys.Screens.PacienteScreen
 
             switch (opcao)
             {
+                case 1:
+                    TelaDeInserirEndereco.Load();
+                    break;
                 case 2:
                     TelaDeObterPaciente.List();
                     break;

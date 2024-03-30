@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace DentiSys.Repositories
 {
-    public class Repository<TModel> where TModel : class
+    public class RepositoryBase<TModel> where TModel : class
     {
 
         private readonly SqlConnection _connection;
 
-        public Repository(SqlConnection connection)
+        public RepositoryBase(SqlConnection connection)
         {
             _connection = connection;
         }
@@ -22,7 +22,7 @@ namespace DentiSys.Repositories
 
         public TModel Get(int id) => _connection.Get<TModel>(id);
 
-        public void Create(TModel tmodel) => _connection.Insert<TModel>(tmodel);
+        public void Create(TModel tmodel) => _connection.Insert(tmodel);
 
         public bool Update(TModel tmodel)
         {

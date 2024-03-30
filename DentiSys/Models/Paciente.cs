@@ -1,5 +1,6 @@
 ﻿
 using Dapper.Contrib.Extensions;
+using System.Runtime.Serialization;
 
 namespace DentiSys.Models
 {
@@ -18,7 +19,7 @@ namespace DentiSys.Models
         public DateTime? DataDeAniversario { get; set; }
         public string? Email { get; set; }   
         public string? NumeroDeTelefone { get; set; }
-        public int IdEndereco { get; set; }
+        public int? IdEndereco { get; set; }
         public Endereco? Endereco { get; set; }
         public IList<PacienteProcedimento> PacienteProcedimentos{ get; set;}
     }

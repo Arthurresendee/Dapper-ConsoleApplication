@@ -1,4 +1,11 @@
-﻿create Table Procedimento
+﻿create Database SistemaOdontologicoDapper
+go
+
+use Dentiys
+
+begin transaction SistemaOdontologicoDapper
+
+create Table Procedimento
 (
 	Id int identity(1,1),
 	Titulo nvarchar(100) null,
@@ -6,6 +13,8 @@
 	Descricao nvarchar(200) null,
 	constraint pk_Procedimento primary key (Id)
 )
+
+go 
 
 Create Table Plano
 (
@@ -19,16 +28,22 @@ Create Table Plano
 	constraint pk_Plano primary key (Id)
 )
 
+go 
+
+
 CREATE TABLE [Endereco]
 (
     Id int identity(1,1),
     CEP NVARCHAR(50) NULL,
     Pais NVARCHAR(50) null,
-    Estado NVARCHAR(50),
+    Estado NVARCHAR(50) null,
     Rua NVARCHAR(100) NULL,
     Numero NVARCHAR(50) NULL,
+	Cidade NVARCHAR(50) NULL
     CONSTRAINT pk_Endereco PRIMARY KEY (Id)
 )
+
+go 
 
 Create Table Dentista
 (
@@ -47,6 +62,8 @@ Create Table Dentista
 	constraint fk_Dentista_Endereco foreign key (IdEndereco) references Endereco (Id)
 )
 
+go 
+
 Create Table Paciente
 (
 	Id int identity(1,1),
@@ -62,23 +79,32 @@ Create Table Paciente
 	constraint fk_Paciente_Endereco foreign key (IdEndereco) references Endereco (Id)
 )
 
+go 
+
 CREATE TABLE [PacientePlano]
 (
-    IdPlano int identity not null,
-    IdPaciente int identity not null,
+    IdPlano int not null,
+    IdPaciente int not null,
     PlanoAtivo bit null,
     constraint pk_PacientePlano primary key (IdPlano, IdPaciente),
     constraint fk_PacientePlano_Plano foreign key (IdPlano) references Plano(Id),
     constraint fk_PacientePlano_Paciente foreign key (IdPaciente) references Paciente (Id)
 );
 
+go 
+
 CREATE TABLE PacienteProcedimento
 (
-    IdPaciente int identity not null,
-    IdProcedimento int identity not null,
+    IdPaciente int not null,
+    IdProcedimento int not null,
     DataProcedimento DateTime not null,
     ProcedimentoRealizado bit null,
     constraint pk_PacienteProcedimento primary key (IdPaciente, IdProcedimento),
     constraint fk_PacienteProcedimento_Paciente foreign key (IdPaciente) references Paciente (Id),
     constraint fk_PacienteProcedimento_Procedimento foreign key (IdProcedimento) references Procedimento (Id)
 );
+
+go
+
+rollback CriandoTabelas
+commit CriandoTabelas;

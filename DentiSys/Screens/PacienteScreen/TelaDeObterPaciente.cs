@@ -18,7 +18,7 @@ namespace DentiSys.Screens.PacienteScreen
 
         public static void List()
         {
-            var repository = new Repository<Paciente>(ConexaoComBanco.Connection);
+            var repository = new RepositoryBase<Paciente>(ConexaoComBanco.Connection);
 
             var pacientes = repository.Get();
 

@@ -1,4 +1,8 @@
-﻿-- Procedimento
+﻿Use SistemaOdontologicoDapper
+
+begin transaction
+
+-- Procedimento
 INSERT INTO [Procedimento] ([Titulo], [TipoDeProcedimento], [Descricao])
 VALUES
     ('Clareamento dental', 5, 'Procedimento estético para clarear os dentes.'),
@@ -24,24 +28,23 @@ VALUES
 
 
 -- Endereco
-INSERT INTO [Endereco] ([CEP], [Pais], [Estado], [Rua], [Numero])
+INSERT INTO [Endereco] ([CEP], [Pais], [Estado], [Rua], [Numero], [Cidade])
 VALUES
-    ('12345-678', 'Brazil', 'São Paulo', 'Rua A', '123'),
-    ('23456-789', 'Brazil', 'Rio de Janeiro', 'Rua B', '456'),
-    ('34567-890', 'Brazil', 'Minas Gerais', 'Rua C', '789'),
-    ('45678-901', 'Brazil', 'Bahia', 'Rua D', '1011'),
-    ('56789-012', 'Brazil', 'Paraná', 'Rua E', '1213'),
-    ('67890-123', 'Brazil', 'Santa Catarina', 'Rua F', '1415'),
-    ('78901-234', 'Brazil', 'Rio Grande do Sul', 'Rua G', '1617'),
-    ('89012-345', 'Brazil', 'Ceará', 'Rua H', '1819'),
-    ('90123-456', 'Brazil', 'Pernambuco', 'Rua I', '2021'),
-    ('01234-567', 'Brazil', 'Amazonas', 'Rua J', '2223'),
-    ('12345-678', 'Brazil', 'São Paulo', 'Rua K', '2425'),
-    ('23456-789', 'Brazil', 'Rio de Janeiro', 'Rua L', '2627'),
-    ('34567-890', 'Brazil', 'Minas Gerais', 'Rua M', '2829'),
-    ('45678-901', 'Brazil', 'Bahia', 'Rua N', '3031'),
-    ('56789-012', 'Brazil', 'Paraná', 'Rua O', '3233');
-
+    ('12345-678', 'Brazil', 'São Paulo', 'Rua A', '123','Araguari'),
+    ('23456-789', 'Brazil', 'Rio de Janeiro', 'Rua B', '456', 'Petrolina'),
+    ('34567-890', 'Brazil', 'Minas Gerais', 'Rua C', '789','Cidade1'),
+    ('45678-901', 'Brazil', 'Bahia', 'Rua D', '1011','Cidade1'),
+    ('56789-012', 'Brazil', 'Paraná', 'Rua E', '1213','Cidade1'),
+    ('67890-123', 'Brazil', 'Santa Catarina', 'Rua F', '1415','Cidade1'),
+    ('78901-234', 'Brazil', 'Rio Grande do Sul', 'Rua G', '1617','Cidade1'),
+    ('89012-345', 'Brazil', 'Ceará', 'Rua H', '1819','Cidade1'),
+    ('90123-456', 'Brazil', 'Pernambuco', 'Rua I', '2021','Cidade1'),
+    ('01234-567', 'Brazil', 'Amazonas', 'Rua J', '2223','Cidade1'),
+    ('12345-678', 'Brazil', 'São Paulo', 'Rua K', '2425','Cidade1'),
+    ('23456-789', 'Brazil', 'Rio de Janeiro', 'Rua L', '2627','Cidade1'),
+    ('34567-890', 'Brazil', 'Minas Gerais', 'Rua M', '2829','Cidade1'),
+    ('45678-901', 'Brazil', 'Bahia', 'Rua N', '3031','Cidade1'),
+    ('56789-012', 'Brazil', 'Paraná', 'Rua O', '3233','Cidade1');
 	
 
 -- Dentista
@@ -101,3 +104,6 @@ VALUES
     (4, 6, GETDATE(), 1),
     (5, 6, GETDATE(), 1),
     (1, 6, GETDATE(), 1);
+
+rollback;
+commit;
