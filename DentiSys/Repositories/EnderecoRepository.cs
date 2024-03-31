@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using DentiSys.Models;
+using DentiSys.Screens.PacienteScreen;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -17,15 +18,16 @@ namespace DentiSys.Repositories
             _connection = connection;
         }
 
-        public IEnumerable<Endereco> PesquisarEnderecosPorCep(string buscaCep)
+        public IEnumerable<Endereco> PesquisarEnderecosPorCep(string CEPParaBuscar)
         {
-            string sql = "Select * from Endereco Where CEP = @CEP";
 
-            var enderecos = _connection.Query<Endereco>(sql);
+            string sql = "Select * from Endereco Where CEP = @CEPParam";
+
+            var enderecos = _connection.Query<Endereco>(sql, new { CEPParam = CEPParaBuscar });
 
             foreach (var item in enderecos)
             {
-                Console.WriteLine(item.Rua);
+                Console.WriteLine($"Estado:{item.Estado}, Cidade: {item.Cidade}, Rua: {item.Rua}");
             }
 
             return enderecos;
