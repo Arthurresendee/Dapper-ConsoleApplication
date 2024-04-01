@@ -102,6 +102,7 @@ namespace DentiSys.Screens.EnderecoScreen.CRUD
                         break;
                 }
             }
+                Console.WriteLine(ex.Message);
         }
     }
 }
