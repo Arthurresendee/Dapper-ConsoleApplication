@@ -20,16 +20,8 @@ namespace DentiSys.Repositories
 
         public IEnumerable<Endereco> PesquisarEnderecosPorCep(string CEPParaBuscar)
         {
-
             string sql = "Select * from Endereco Where CEP = @CEPParam";
-
             var enderecos = _connection.Query<Endereco>(sql, new { CEPParam = CEPParaBuscar });
-
-            foreach (var item in enderecos)
-            {
-                Console.WriteLine($"Estado:{item.Estado}, Cidade: {item.Cidade}, Rua: {item.Rua}");
-            }
-
             return enderecos;
         }
 

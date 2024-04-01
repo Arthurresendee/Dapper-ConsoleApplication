@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DentiSys.Screens.EnderecoScreen.CRUD
 {
-    internal class TelaDeExcluirEndereco
+    internal class UpdateEnderecoScreen
     {
     }
 }

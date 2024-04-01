@@ -12,7 +12,7 @@ using DentiSys.Screens.EnderecoScreen.CRUD;
 
 namespace DentiSys.Screens.PacienteScreen
 {
-    public static class TelaDeMenuDoEndereco
+    public static class EnderecoMenuScreen
     {
         public static void Load()
         {
@@ -23,11 +23,9 @@ namespace DentiSys.Screens.PacienteScreen
             Console.WriteLine();
             Console.WriteLine(" 1 - Cadastrar um endereco");
             Console.WriteLine();
-            Console.WriteLine(" 2 - Buscar todos os enderecos");
+            Console.WriteLine(" 2 - Buscar Enderecos");
             Console.WriteLine();
-            Console.WriteLine(" 3 - Buscar enderecos específicos");
-            Console.WriteLine();
-            Console.WriteLine(" 4 - Voltar");
+            Console.WriteLine(" 6 - Voltar");
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Digite abaixo:");
@@ -36,21 +34,20 @@ namespace DentiSys.Screens.PacienteScreen
             switch (opcao)
             {
                 case 1:
-                    TelaDeInserirEndereco.Load();
+                    CreateEnderecoScreen.Load();
                     break;
 
                 case 2:
-                    TelaDeObterEndereco.List();
+                    ReadEnderecoScreen.TelaDeOpcoesDeBusca();
                     break;
 
-                case 3:
-                    TelaDeObterEndereco.TelaDeOpcoesDeBusca();
-                    break;
-
-                case 4:
+                case 6:
                     MenuPrincipalScreen.Load();
                     break;
-                
+
+                default:
+                    Load();
+                    break;
             }
         }
 

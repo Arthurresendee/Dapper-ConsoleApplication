@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DentiSys.Screens.EnderecoScreen.CRUD
 {
-    internal class TelaDeInserirEndereco
+    internal class CreateEnderecoScreen
     {
         public static void Load()
         {

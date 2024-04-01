@@ -23,13 +23,13 @@ namespace DentiSys.Screens
             Console.WriteLine();
             //Console.WriteLine(" 3 - Gerenciar planos");
             //Console.WriteLine();
-            //Console.WriteLine(" 4 - Consultas");
+            //Console.WriteLine(" 4 - Gerenciar Consultas");
             //Console.WriteLine();
-            //Console.WriteLine(" 5 - Relatórios");
+            //Console.WriteLine(" 5 - Gerenciar dentistas");
             //Console.WriteLine();
-            //Console.WriteLine(" 6 - Gerenciar dentistas");
+            //Console.WriteLine(" 6 - Relatórios");
             //Console.WriteLine();
-            Console.WriteLine(" 7 - sair");
+            //Console.WriteLine(" 7 - sair");
             Console.WriteLine();
             Console.WriteLine();
             Console.Write("Digite a opção: ");
@@ -41,7 +41,7 @@ namespace DentiSys.Screens
                     TelaDeMenuDoPaciente.Load();
                     break;
                 case 2:
-                    TelaDeMenuDoEndereco.Load();
+                    EnderecoMenuScreen.Load();
                     break;
             }
         }

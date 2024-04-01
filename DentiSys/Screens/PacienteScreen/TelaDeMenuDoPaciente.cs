@@ -29,7 +29,7 @@ namespace DentiSys.Screens.PacienteScreen
             switch (opcao)
             {
                 case 1:
-                    TelaDeInserirEndereco.Load();
+                    CreateEnderecoScreen.Load();
                     break;
                 case 2:
                     TelaDeObterPaciente.List();
