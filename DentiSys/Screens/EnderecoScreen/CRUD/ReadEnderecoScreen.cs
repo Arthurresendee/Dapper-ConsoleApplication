@@ -3,6 +3,7 @@ using DentiSys.Repositories;
 using DentiSys.Screens.PacienteScreen;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
@@ -12,25 +13,9 @@ namespace DentiSys.Screens.EnderecoScreen.CRUD
 {
     public static class ReadEnderecoScreen
     {
+        static ReadEnderecoScreen() { }
 
-        static ReadEnderecoScreen()
-        {
-
-        }
-
-        public static void List()
-        {
-            var repository = new RepositoryBase<Endereco>(ConexaoComBanco.Connection);
-
-            var enderecos = repository.Get();
-
-            foreach (var item in enderecos)
-            {
-                Console.WriteLine($"Id: {item.Id} - {item.CEP}");
-            }
-        }
-
-        public static void TelaDeOpcoesDeBusca()
+        public static void BuscarEnderecosScreen()
         {
             var enderecoRepository = new EnderecoRepository(ConexaoComBanco.Connection);
 
@@ -48,44 +33,12 @@ namespace DentiSys.Screens.EnderecoScreen.CRUD
             switch (opcaoBusca)
             {
                 case 1:
+                    Console.Clear();
+                    Console.WriteLine("Digite o CEP: ");
+                    var cep = Console.ReadLine();
 
-                    var cepDigitado = TelaPesquisarPorCEP();
+                    VerificarEImprimirCEP(cep,enderecoRepository);
 
-                    var enderecos = enderecoRepository.PesquisarEnderecosPorCep(cepDigitado); //Fazer o tratamento de caso seja nulo
-
-                    if (enderecos == null)
-                        Console.WriteLine("Endereço não encontrado com esse CEP");
-                    else
-                    {
-                        Console.WriteLine();
-                        foreach (var item in enderecos)
-                        {
-                            Console.WriteLine($"Estado:{item.Estado}, Cidade: {item.Cidade}, Rua: {item.Rua}");
-                        }
-                        Console.WriteLine();
-                        Console.WriteLine("------------------------------------------");
-                        Console.WriteLine();
-
-                        Console.WriteLine("Deseja fazer outra operação?\n");
-                        Console.WriteLine("1 - Sim");
-                        Console.WriteLine("2 - Não\n");
-                        Console.WriteLine("Digite abaixo:");
-                        var opcaoOperacao = short.Parse(Console.ReadLine());
-                        switch (opcaoOperacao)
-                        {
-                            case 1:
-                                Console.WriteLine("-------------------------------------------");
-                                TelaDeOpcoesDeBusca();
-                                break;
-                            case 2:
-                                break;
-
-                            default:
-                                Console.WriteLine("-------------------------------------------");
-                                TelaDeOpcoesDeBusca();
-                                break;
-                        }
-                    }
                     break;
 
                 case 7:
@@ -95,13 +48,9 @@ namespace DentiSys.Screens.EnderecoScreen.CRUD
             }
         }
 
-        static string TelaPesquisarPorCEP()
+        static void VerificarEImprimirCEP(string cep,EnderecoRepository enderecoRepository)
         {
-            Console.Clear();
-            Console.WriteLine("Digite o CEP: ");
-            var cep = Console.ReadLine();
-
-            if (string.IsNullOrEmpty(cep) || cep.Length > 10)
+            if (string.IsNullOrEmpty(cep))
             {
                 Console.WriteLine("CEP nulo ou inválido...");
                 Thread.Sleep(500);
@@ -114,10 +63,45 @@ namespace DentiSys.Screens.EnderecoScreen.CRUD
                     Thread.Sleep(1000);
                 }
 
-                TelaDeOpcoesDeBusca();
-                return "";
+                BuscarEnderecosScreen();
             }
-            else return cep;
+
+            var enderecos = enderecoRepository.BuscarEnderecosPorCep(cep); //Fazer o tratamento de caso seja nulo
+
+            if (enderecos == null)
+                Console.WriteLine("Endereço não encontrado com esse CEP");
+            else
+            {
+                Console.WriteLine();
+                foreach (var item in enderecos)
+                {
+                    Console.WriteLine($"Estado:{item.Estado}, Cidade: {item.Cidade}, Rua: {item.Rua}");
+                }
+
+                Console.WriteLine();
+                Console.WriteLine("------------------------------------------");
+                Console.WriteLine();
+
+                Console.WriteLine("Deseja fazer outra operação?\n");
+                Console.WriteLine("1 - Sim");
+                Console.WriteLine("2 - Não\n");
+                Console.WriteLine("Digite abaixo:");
+                var opcaoOperacao = short.Parse(Console.ReadLine());
+                switch (opcaoOperacao)
+                {
+                    case 1:
+                        Console.WriteLine("-------------------------------------------");
+                        BuscarEnderecosScreen();
+                        break;
+                    case 2:
+                        break;
+
+                    default:
+                        Console.WriteLine("-------------------------------------------");
+                        BuscarEnderecosScreen();
+                        break;
+                }
+            }
         }
     }
 }

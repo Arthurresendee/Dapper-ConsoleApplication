@@ -18,7 +18,12 @@ namespace DentiSys.Repositories
             _connection = connection;
         }
 
-        public IEnumerable<Endereco> PesquisarEnderecosPorCep(string CEPParaBuscar)
+        /// <summary>s
+        /// Pesquisa todos os endereços de um determinado CEP
+        /// </summary>
+        /// <param name="CEPParaBuscar">CEP desejado para fazer a busca</param>
+        /// <returns>Retorna um IEnumerable de Endereço do banco de dados baseado no seu CEP. Retorna nulo se não encontrar nenhum endereço com o CEP</returns>
+        public IEnumerable<Endereco> BuscarEnderecosPorCep(string CEPParaBuscar)
         {
             string sql = "Select * from Endereco Where CEP = @CEPParam";
             var enderecos = _connection.Query<Endereco>(sql, new { CEPParam = CEPParaBuscar });

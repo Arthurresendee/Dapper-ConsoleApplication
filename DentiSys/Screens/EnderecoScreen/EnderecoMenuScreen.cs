@@ -17,17 +17,11 @@ namespace DentiSys.Screens.PacienteScreen
         public static void Load()
         {
             Console.Clear();
-            Console.WriteLine("---------------- Gestão de endereço -------------------");
-            Console.WriteLine();
-            Console.WriteLine("Opções disponíveis:");
-            Console.WriteLine();
-            Console.WriteLine(" 1 - Cadastrar um endereco");
-            Console.WriteLine();
-            Console.WriteLine(" 2 - Buscar Enderecos");
-            Console.WriteLine();
-            Console.WriteLine(" 6 - Voltar");
-            Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("---------------- Gestão de endereço -------------------\n");
+            Console.WriteLine("Opções disponíveis:\n");
+            Console.WriteLine(" 1 - Cadastrar endereco\n");
+            Console.WriteLine(" 2 - Buscar Enderecos\n");
+            Console.WriteLine(" 6 - Voltar\n\n");
             Console.WriteLine("Digite abaixo:");
             var opcao = short.Parse(Console.ReadLine());
 
@@ -38,7 +32,7 @@ namespace DentiSys.Screens.PacienteScreen
                     break;
 
                 case 2:
-                    ReadEnderecoScreen.TelaDeOpcoesDeBusca();
+                    ReadEnderecoScreen.BuscarEnderecosScreen();
                     break;
 
                 case 6:

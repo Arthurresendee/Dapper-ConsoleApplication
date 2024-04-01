@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|c:\\dev\\sistemaodontologico-consoleapplication\\dentisys\\screens\\enderecoscreen\\enderecomenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|solutionrelative:screens\\enderecoscreen\\enderecomenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|c:\\dev\\sistemaodontologico-consoleapplication\\dentisys\\screens\\enderecoscreen\\crud\\createenderecoscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|solutionrelative:screens\\enderecoscreen\\crud\\createenderecoscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|c:\\dev\\sistemaodontologico-consoleapplication\\dentisys\\screens\\enderecoscreen\\crud\\deleteenderecoscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|solutionrelative:screens\\enderecoscreen\\crud\\deleteenderecoscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|c:\\dev\\sistemaodontologico-consoleapplication\\dentisys\\screens\\enderecoscreen\\crud\\readenderecoscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +19,12 @@
       "RelativeMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|solutionrelative:screens\\enderecoscreen\\crud\\updateenderecoscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|c:\\dev\\sistemaodontologico-consoleapplication\\dentisys\\screens\\enderecoscreen\\crud\\deleteenderecoscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|solutionrelative:screens\\enderecoscreen\\crud\\deleteenderecoscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|c:\\dev\\sistemaodontologico-consoleapplication\\dentisys\\screens\\enderecoscreen\\enderecomenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|solutionrelative:screens\\enderecoscreen\\enderecomenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|c:\\dev\\sistemaodontologico-consoleapplication\\dentisys\\screens\\enderecoscreen\\crud\\createenderecoscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|solutionrelative:screens\\enderecoscreen\\crud\\createenderecoscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|c:\\dev\\sistemaodontologico-consoleapplication\\dentisys\\ler.readme||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|solutionrelative:ler.readme||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37E63751-BB1A-4181-BF12-4B0B77899EA1}|DentiSys.csproj|C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\screens\\menuprincipalscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 163,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +94,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
+              "Title": "Ler.Readme",
+              "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Ler.Readme",
+              "RelativeDocumentMoniker": "Ler.Readme",
+              "ToolTip": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Ler.Readme",
+              "RelativeToolTip": "Ler.Readme",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-01T01:16:45.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "TelaDeObterPaciente.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\PacienteScreen\\TelaDeObterPaciente.cs",
               "RelativeDocumentMoniker": "Screens\\PacienteScreen\\TelaDeObterPaciente.cs",
@@ -103,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "TelaDeMenuDoPaciente.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\PacienteScreen\\TelaDeMenuDoPaciente.cs",
               "RelativeDocumentMoniker": "Screens\\PacienteScreen\\TelaDeMenuDoPaciente.cs",
@@ -116,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TelaDeInserirPaciente.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\PacienteScreen\\TelaDeInserirPaciente.cs",
               "RelativeDocumentMoniker": "Screens\\PacienteScreen\\TelaDeInserirPaciente.cs",
@@ -129,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "TelaDeExcluirPaciente.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\PacienteScreen\\TelaDeExcluirPaciente.cs",
               "RelativeDocumentMoniker": "Screens\\PacienteScreen\\TelaDeExcluirPaciente.cs",
@@ -142,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TelaDeAtualizarPaciente.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\PacienteScreen\\TelaDeAtualizarPaciente.cs",
               "RelativeDocumentMoniker": "Screens\\PacienteScreen\\TelaDeAtualizarPaciente.cs",
@@ -155,12 +172,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MenuPrincipalScreen.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\MenuPrincipalScreen.cs",
               "RelativeDocumentMoniker": "Screens\\MenuPrincipalScreen.cs",
-              "ToolTip": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\MenuPrincipalScreen.cs*",
-              "RelativeToolTip": "Screens\\MenuPrincipalScreen.cs*",
+              "ToolTip": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\MenuPrincipalScreen.cs",
+              "RelativeToolTip": "Screens\\MenuPrincipalScreen.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-31T01:32:04.888Z",
@@ -168,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "InsercaoDados.sql ",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Scripts\\InsercaoDados.sql",
               "RelativeDocumentMoniker": "Scripts\\InsercaoDados.sql",
@@ -179,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CriacaoBanco.sql ",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Scripts\\CriacaoBanco.sql",
               "RelativeDocumentMoniker": "Scripts\\CriacaoBanco.sql",
@@ -190,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "EnderecoRepository.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Repositories\\EnderecoRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\EnderecoRepository.cs",
@@ -203,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -215,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ConexaoComBanco.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\ConexaoComBanco.cs",
               "RelativeDocumentMoniker": "ConexaoComBanco.cs",
@@ -227,20 +244,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EnderecoMenuScreen.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\EnderecoScreen\\EnderecoMenuScreen.cs",
               "RelativeDocumentMoniker": "Screens\\EnderecoScreen\\EnderecoMenuScreen.cs",
-              "ToolTip": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\EnderecoScreen\\EnderecoMenuScreen.cs*",
-              "RelativeToolTip": "Screens\\EnderecoScreen\\EnderecoMenuScreen.cs*",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAiwDAAAAAbAAAA",
+              "ToolTip": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\EnderecoScreen\\EnderecoMenuScreen.cs",
+              "RelativeToolTip": "Screens\\EnderecoScreen\\EnderecoMenuScreen.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwCIAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T00:59:12.201Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "RepositoryBase.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Repositories\\RepositoryBase.cs",
               "RelativeDocumentMoniker": "Repositories\\RepositoryBase.cs",
@@ -252,20 +269,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "CreateEnderecoScreen.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\EnderecoScreen\\CRUD\\CreateEnderecoScreen.cs",
               "RelativeDocumentMoniker": "Screens\\EnderecoScreen\\CRUD\\CreateEnderecoScreen.cs",
               "ToolTip": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\EnderecoScreen\\CRUD\\CreateEnderecoScreen.cs",
               "RelativeToolTip": "Screens\\EnderecoScreen\\CRUD\\CreateEnderecoScreen.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACsAAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T00:53:31.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "DeleteEnderecoScreen.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\EnderecoScreen\\CRUD\\DeleteEnderecoScreen.cs",
               "RelativeDocumentMoniker": "Screens\\EnderecoScreen\\CRUD\\DeleteEnderecoScreen.cs",
@@ -278,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UpdateEnderecoScreen.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\EnderecoScreen\\CRUD\\UpdateEnderecoScreen.cs",
               "RelativeDocumentMoniker": "Screens\\EnderecoScreen\\CRUD\\UpdateEnderecoScreen.cs",
@@ -291,13 +308,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ReadEnderecoScreen.cs",
               "DocumentMoniker": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\EnderecoScreen\\CRUD\\ReadEnderecoScreen.cs",
               "RelativeDocumentMoniker": "Screens\\EnderecoScreen\\CRUD\\ReadEnderecoScreen.cs",
               "ToolTip": "C:\\dev\\SistemaOdontologico-ConsoleApplication\\DentiSys\\Screens\\EnderecoScreen\\CRUD\\ReadEnderecoScreen.cs",
               "RelativeToolTip": "Screens\\EnderecoScreen\\CRUD\\ReadEnderecoScreen.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAwwGEAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T00:53:25.176Z",
               "EditorCaption": ""
